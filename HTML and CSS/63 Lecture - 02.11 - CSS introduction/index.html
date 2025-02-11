@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>63 Lecture - CSS intro</title>
+  <style>
+    h2{
+      color: green;
+      text-align: center;
+      font-size: 35px;
+    }
+    h1{
+      color: green;
+      text-align: center;
+      font-size: 45px;
+      text-shadow: 2px 2px 5px red;
+    }
+  </style>
+</head>
+<body style="background-color: bisque; margin: 0;">
+  <header>
+    <nav></nav>
+  </header>
+  <main>
+    <section> <!-- Semantic tags -->
+      <h2>Semantic tags</h2>
+      <ul>
+        <li>header - top part of the page (menu, login, sign in...)</li>
+        <li>main - main content of the page</li>
+        <li>footer - displaying: copyrights, terms and uses, cookies, privacy policy...</li>
+        <li>nav - navigation - used to help user to navigate around the website</li>
+        <li>section - used to display a big group of elements about the same topic</li>
+        <li>article - used to display a big group of elements about the same topic</li>
+        <li>div - used to group elements together</li>
+      </ul>
+    </section>
+    <h1>Cascading Style Sheets</h1>
+    <section> <!-- Ways to write CSS -->
+      <h2>Ways to write CSS</h2>
+      <ul>
+        <li>Inline - write CSS in tag's style attribute</li>
+        <li>Internal - to write CSS in HTML file, in style tag (which is normally placed in a head)</li>
+        <li>External - to write CSS in a separate file and link it to the HTML</li>
+      </ul>
+      <div>
+        <div>
+          <h3>Inline</h3>
+          <p>
+            <span>Inline CSS</span> is normally used to test out styles or to inject a specific style onto HTML element from JavaScript.<br>
+            In order to use inline style, we need to add attribute called "style" to the tag and write CSS code as it's value.
+          </p>
+        </div>
+        <div>
+          <h3>Internal</h3>
+          <p>
+            <span>Internal CSS</span> is normally used to test out styles or/and selectors inside of an HTML element without the need of creating additional CSS file.<br>
+            In order to use internal style, we need to create "style" tag (normally inside of a head tag) and write CSS code in there.
+          </p>
+        </div>
+        <div>
+          <h3>External</h3>
+          <p>
+            <span>External CSS</span> is used most commonly (practically always).<br>
+            In order to use external style, we need to create additional file of CSS type and link it to the HTML file inside of which we want the styles of CSS file to work.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer></footer>
+</body>
+</html>
