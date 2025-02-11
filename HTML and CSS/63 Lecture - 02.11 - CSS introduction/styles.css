@@ -16,3 +16,12 @@ h1, h2, h3{
 h3{
   font-size: 25px;
 }
+
+.our-css-class{
+  text-decoration: 2px purple underline dashed;
+  color: #000094;
+}
+
+#do-not-use-id-in-css{
+  border: 3px dotted violet;
+}
