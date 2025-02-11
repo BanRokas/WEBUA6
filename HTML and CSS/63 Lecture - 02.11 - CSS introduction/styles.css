@@ -54,3 +54,18 @@ h3{
 .flex-rows{
   display: flex;
 }
+
+
+.horizontalusPilnas{
+  width: 510px;
+  height: 100px;
+}
+.geltona{
+  background-color: yellow;
+}
+.zalia{
+  background-color: green;
+}
+.raudona{
+  background-color: red;
+}

@@ -1,0 +1,7 @@
+CAO:
+  Read Lecture 2 and 3
+  Do practice tasks in Lectures 2 and 3
+
+Rokas:
+  1) Create a table with columns: Numeration, Name, Location, Been/NotBeen, Link, Photo. Make at least 5 rows.
+  2) Create Flags using Background-colors and displays. Make at least 3 flags.
