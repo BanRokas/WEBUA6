@@ -25,3 +25,32 @@ h3{
 #do-not-use-id-in-css{
   border: 3px dotted violet;
 }
+
+.inline{
+  display: inline;
+}
+.block{
+  display: block;
+}
+.inline-block{
+  display: inline-block;
+}
+.square{
+  width: 200px;
+  height: 100px;
+  background-color: aquamarine;
+  font-size: 24px;
+  /* line-height: 100px; */
+  text-align: center;
+  border: 2px solid black;
+}
+
+.grid-three-columns{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.flex-rows{
+  display: flex;
+}

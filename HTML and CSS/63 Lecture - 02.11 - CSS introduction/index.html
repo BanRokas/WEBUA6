@@ -45,7 +45,7 @@
         <li>Internal - to write CSS in HTML file, in style tag (which is normally placed in a head)</li>
         <li>External - to write CSS in a separate file and link it to the HTML</li>
       </ul>
-      <div>
+      <div class="grid-three-columns">
         <div>
           <h3>Inline</h3>
           <p>
@@ -81,7 +81,7 @@
         <li>.class - make up some kind of name</li>
         <li>#id - make up some kind of name</li>
       </ul>
-      <div>
+      <div class="flex-rows">
         <div>
           <h3>Class</h3>
           <p>
@@ -97,6 +97,51 @@
             To give HTML element any ID, we need to give HTML element attribute of "id" and value of "nameOfTheID".<br>
             We can give a single id to a single element AND we can use a single id only once. (one-to-one relation)
           </p>
+        </div>
+      </div>
+    </section>
+    <section> <!-- Display -->
+      <h2>Display</h2>
+      <ul>
+        <li>Inline</li>
+        <li>Block</li>
+        <li>Inline-Block</li>
+        <li>Flex</li>
+        <li>Grid</li>
+      </ul>
+      <div class="flex-rows">
+        <div>
+          <h3>Inline</h3>
+          <p>
+            Inline elements can be displayed in one line next to one another. They take only the necessary space they need to display the content. We can not set height or width.
+          </p>
+          <div>
+            <span class="inline square">Inline 1</span>
+            <span class="inline square">Inline 2</span>
+            <span class="inline square">Inline 3</span>
+          </div>
+        </div>
+        <div>
+          <h3>Block</h3>
+          <p>
+            Block elements can not be display in one line next to one another. They take all the width on the screen. We can change height and width, but they will still not share same line with other elements.
+          </p>
+          <div>
+            <span class="block square">Block 1</span>
+            <span class="block square">Block 2</span>
+            <span class="block square">Block 3</span>
+          </div>
+        </div>
+        <div>
+          <h3>Inline-Block</h3>
+          <p>
+            Inline-block elements can be displayed in one line next to one another, they take only the necessary space they need to display the content and we can change their width and height.
+          </p>
+          <div>
+            <span class="inline-block square">Inline Block 1</span>
+            <span class="inline-block square">Inline Block 2</span>
+            <span class="inline-block square">Inline Block 3</span>
+          </div>
         </div>
       </div>
     </section>
