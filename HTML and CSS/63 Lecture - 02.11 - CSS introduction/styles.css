@@ -1,3 +1,18 @@
+*{
+  padding: 5px;
+}
+
 p{
   color: #7288f6;
+  text-align: justify;
+}
+ul{
+  font-family: monospace;
+  list-style-type: square;
+}
+h1, h2, h3{
+  text-align: center;
+}
+h3{
+  font-size: 25px;
 }
