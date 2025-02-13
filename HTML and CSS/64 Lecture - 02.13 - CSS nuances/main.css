@@ -1,0 +1,34 @@
+body{
+  background-color: #b8b7b8;
+  margin: 0;
+  min-height: 5000px;
+}
+
+.background{
+  height: 500px;
+  border: 3px solid black;
+}
+.solid{
+  background-color: #9dd88d;
+}
+.linear-grad{
+  background-image: linear-gradient(
+    to right bottom,
+    blue,
+    rgba(241, 139, 139, 0.5),
+    #7ae37a,
+    hsl(39, 65%, 71%)
+  );
+}
+.bgImageBasic{
+  background-image: url('./images/nature9.jpg');
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  background-position: center;
+}
+.bgImageFixed{
+  background-image: url('./images/nature3.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}

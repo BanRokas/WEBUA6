@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>64 Lecture - CSS nuances</title>
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+  <header></header>
+  <main>
+    <section> <!-- background -->
+      <h2>Background</h2>
+      <p>
+        Background can be: solid one color, gradient of colors, images.
+      </p>
+      <div class="solid background"></div>
+      <div class="background linear-grad"></div>
+      <div class="background bgImageFixed"></div>
+      <div class="background bgImageBasic"></div>
+    </section>
+    <section> <!-- colors -->
+      <h2>Colors</h2>
+      <p>
+        Colors can be written in many different ways, from using named colors to writing some kind of strange code barely anyone understands.
+      </p>
+      <ul>
+        <li>Named colors - about 140 of them out of 16.7m</li>
+        <li>RGB - RedGreenBlue - each color got saturation going from 0 to 255</li>
+        <li>Hex - Hexadecimal - each color got saturation going from 00 to ff</li>
+        <li>HSL - Hue(0 to 359) Saturation(0%-100%) Lightness(0%-100%)</li>
+      </ul>
+      <div>
+        <div>
+          <h3>RGB</h3>
+          <p>
+            RGB meaning Red Green Blue creates colors from giving each one of 3 colors value from 0 to 255.<br>
+            RGB code can have an opactiry (alpha), in that case it's no longer RGB, but RGBA. Alpha goes from 1 (meaning not transparent at all) to 0 (meaning fully transparent) by 0.001 step.
+          </p>
+        </div>
+        <div>
+          <h3>Hex</h3>
+          <p>
+            Hex meaning hexadecimal (16th code) using symbols from 0 to f to represent a number from 0 to 15.
+          </p>
+          <p>
+            Decimal system has: 0 1 2 3 4 5 6 7 8 9.<br>
+            Hexadecimal system has: 0 1 2 3 4 5 6 7 8 9 a b c d e f.<br>
+            Number eleven in: decimal - 11; hexadecimal - b or 0b.<br>
+            Number fifteen in: decimal - 15; hexadecimal - f or 0f.<br>
+            Number twenty one in: decimal - 21; hexadecimal - 16.<br>
+            Number twenty nine in: decimal - 27; hexadecimal - 1c.<br>
+          </p>
+        </div>
+      </div>
+    </section>
+    <section> <!-- Browser default styles -->
+      <h2>Browser default styles</h2>
+
+    </section>
+    <section> <!-- Parent and children elements -->
+      <h2>Parent and children elements</h2>
+
+    </section>
+    <section> <!-- CSS styles priorities -->
+      <h2>CSS styles priorities</h2>
+    </section>
+  </main>
+  <footer></footer>
+</body>
+</html>
