@@ -56,9 +56,16 @@ h3{
 }
 
 
+.flag{
+  font-size: 0;
+}
 .horizontalusPilnas{
   width: 510px;
   height: 100px;
+}
+.verticalFull{
+  height: 300px;
+  width: 170px;
 }
 .geltona{
   background-color: yellow;
@@ -68,4 +75,7 @@ h3{
 }
 .raudona{
   background-color: red;
+}
+.white{
+  background-color: white;
 }
