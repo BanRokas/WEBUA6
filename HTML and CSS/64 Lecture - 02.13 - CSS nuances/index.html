@@ -56,14 +56,76 @@
     </section>
     <section> <!-- Browser default styles -->
       <h2>Browser default styles</h2>
-
+      <p>
+        Most of the tags have their own styles. And those styles may vary a little bit in between different browsers.
+      </p>
+      <p>
+        <a href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">Normalize CSS</a> - to normalize styles in between different browsers.
+      </p>
+      <p>
+        <a href="https://meyerweb.com/eric/tools/css/reset/reset200802.css">Reset CSS</a> - to deletes tags identity.
+      </p>
     </section>
     <section> <!-- Parent and children elements -->
-      <h2>Parent and children elements</h2>
-
+      <h2 
+        class="greenText blueText"
+        id="yellowText"
+      >Parent and children elements</h2>
+      <p>
+        Element CAN have many children elements.<br>
+        Element HAVE only one parent element.
+      </p>
+      <h3>Inheritance</h3>
+      <p class="redText">
+        Styles can be inherited by children elements from parent element.
+      </p>
     </section>
-    <section> <!-- CSS styles priorities -->
-      <h2>CSS styles priorities</h2>
+    <section class="redText"> <!-- CSS styles priorities -->
+      <h2 
+        class="redText"
+        style="color: orange;"
+      >CSS styles priorities</h2>
+      <a href="https://google.lt">google</a>
+      <ol>
+        <li>!important</li>
+        <li>Inline</li>
+        <li>Selector Specificity
+          <ol>
+            <li>100 - id</li>
+            <li>010 - class</li>
+            <li>001 - tag</li>
+          </ol>
+        </li>
+        <li>Order (only if specificity is the same)</li>
+        <li>User agent stylesheet / browser styles</li>
+        <li>Inheritance</li>
+      </ol>
+    </section>
+    <section>
+      <h2>Selectors</h2>
+      <ul class="list">
+        <li>combination
+          <ul>
+            <li>tagName.className</li>
+            <li>tagName#idName</li>
+            <li>.className1.className2</li>
+            <li>.className#idName</li>
+            <li>#idName.className</li>
+            <li>...</li>
+          </ul>
+        </li>
+        <li>selector1 selector2 - selector2 which is inside of selector1, no matter how deep/far in</li>
+        <li>selector1 > selector2 - selector2 which is a direct child of selector1</li>
+        <li>selector1 + selector2 - selector2 which is next sibling element of selector1</li>
+        <li>selector1 ~ selector2 - selector2s that are one of next...next sibling elements</li>
+      </ul>
+      <p>a</p>
+      <p>b</p>
+      <a href=""></a>
+      <img src="" alt="">
+      <span>a</span>
+      <span>b</span>
+      <div></div>
     </section>
   </main>
   <footer></footer>

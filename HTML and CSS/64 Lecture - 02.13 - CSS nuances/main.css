@@ -32,3 +32,29 @@ body{
   background-position: center;
   background-attachment: fixed;
 }
+
+h2{
+  color: purple !important;
+}
+#yellowText{
+  color: yellow;
+}
+.blueText{
+  color: blue;
+}
+.greenText{
+  color: green;
+}
+h2.redText{
+  font-size: 50px;
+}
+.redText{
+  color: red;
+  font-size: 20px;
+}
+ul.list > li{
+  border: 1px solid black;
+}
+h2 ~ span{
+  font-size: 100px;
+}
