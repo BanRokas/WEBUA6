@@ -37,7 +37,7 @@
         </p>
       </div>
     </section>
-    <section> <!-- Positions -->
+    <section class="relative"> <!-- Positions -->
       <h2>Positions</h2>
       <ul>
         <li>static (default)</li>
@@ -63,6 +63,68 @@
           <div class="box static top">Static 3</div>
           <div class="box static">Static 4</div>
         </div>
+      </div>
+      <div>
+        <h3>Relative</h3>
+        <p>
+          Top, right, bottom, left pushes element from corresponding side by the written amount of pixels.
+        </p>
+        <p>
+          Also used to set boundaries for absolute positioned elements within it.
+        </p>
+        <div class="positionContainer">
+          <div class="box static">Static 1</div>
+          <div class="box relative left z1">Relative 2</div>
+          <div class="box relative top">Relative 3</div>
+          <div class="box static">Static 4</div>
+        </div>
+      </div>
+      <div>
+        <h3>Absolute</h3>
+        <p>
+          Element is removed from normal document flow.<br>
+          Top, right, bottom, left pushes the element away from closest positioned ancestor (if any) side that has positioned relative.
+        </p>
+        <div class="positionContainer relative">
+          <div class="box static">Static 1</div>
+          <div class="box static">Static 2</div>
+          <div class="box absolute top right">Absolute 3</div>
+          <div class="box static">Static 4</div>
+        </div>
+      </div>
+      <div>
+        <h3>Fixed</h3>
+        <p>
+          Element is removed from normal document flow.<br>
+          Top, right, bottom, left sets the position in which element is always displayed on the screen (no matter how much user scrolls).
+        </p>
+        <div class="positionContainer">
+          <div class="box static">Static 1</div>
+          <div class="box fixed top right">Fixed 2</div>
+          <div class="box static">Static 3</div>
+          <div class="box static">Static 4</div>
+        </div>
+      </div>
+      <div>
+        <h3>Sticky</h3>
+        <p>
+          Works like fixed, but only inside of it's parent element. It sticks to the viewport borders once they get to the element.
+        </p>
+        <div class="positionContainer">
+          <div class="box static">Static 1</div>
+          <div class="box static">Static 2</div>
+          <div class="box sticky top">Sticky 3</div>
+          <div class="box static">Static 4</div>
+        </div>
+      </div>
+    </section>
+    <section class="imageBackground">
+      <div class="transparentBackground"></div>
+      <div class="content">
+        <h2>Hello</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae nisi tempore accusamus ullam laboriosam quaerat cumque iusto assumenda modi aperiam, harum, iure ex sit sint veritatis totam in consequuntur quia, praesentium itaque dicta nemo dolorem repellendus! Suscipit esse cupiditate totam a itaque voluptates delectus nostrum ea earum ratione ad culpa facilis dicta eveniet, nulla sequi debitis nobis sit autem inventore neque natus perferendis corrupti eius. Repellendus, molestiae quidem? Magni consequatur illum corporis, optio ad eligendi, fugiat eveniet eos atque voluptate dicta, laboriosam aut commodi saepe? Ab, quas laborum est aliquam sed maxime expedita soluta velit excepturi odit architecto cupiditate quisquam.
+        </p>
       </div>
     </section>
     <section> <!-- Fonts from google fonts -->
