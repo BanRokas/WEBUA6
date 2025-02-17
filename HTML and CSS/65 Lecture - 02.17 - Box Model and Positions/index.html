@@ -38,7 +38,32 @@
       </div>
     </section>
     <section> <!-- Positions -->
-
+      <h2>Positions</h2>
+      <ul>
+        <li>static (default)</li>
+        <li>relative</li>
+        <li>absolute</li>
+        <li>fixed</li>
+        <li>sticky</li>
+        <li>top, right, bottom, left, z-index (not positions)</li>
+      </ul>
+      <p>
+        Thenever we give position (not static) to an element, we get to use: top, right, bottom, left, z-index styles.<br>
+        Top, right, bottom and left works differently with different positions.<br>
+        z-index always works the same - it's used to set element's layer.
+      </p>
+      <div>
+        <h3>Static</h3>
+        <p>
+          Can't use top, right, bottom, left or z-index...
+        </p>
+        <div class="positionContainer">
+          <div class="box static">Static 1</div>
+          <div class="box static">Static 2</div>
+          <div class="box static top">Static 3</div>
+          <div class="box static">Static 4</div>
+        </div>
+      </div>
     </section>
     <section> <!-- Fonts from google fonts -->
 
