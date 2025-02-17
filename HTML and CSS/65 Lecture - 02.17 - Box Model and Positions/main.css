@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
 body{
   margin: 0;
   height: 500vh;
+  font-family: "Roboto Mono", serif;
   background-color: #b2b2b2;
 }
 
@@ -126,4 +129,6 @@ body{
 .content{
   position: relative;
   z-index: 1;
+  font-weight: 600;
+  font-style: italic;
 }
