@@ -1,0 +1,54 @@
+body{
+  margin: 0;
+  height: 500vh;
+}
+
+.twoColumns{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.twoColumns img{
+  width: 300px;
+  height: auto;
+}
+
+.boxModelExample{
+  width: 300px;
+  height: 100px;
+  background-color: aquamarine;
+
+  /* Padding */
+  /* padding-top: 10px; */
+  /* padding-right: 5px; */
+  /* padding-bottom: 10px; */
+  /* padding-left: 5px; */
+  /* padding: 10px; */
+  /* padding: 10px 5px; */
+  padding: 10px 5px 1px;
+  /* padding: 10px 5px 15px 1px; */
+
+  /* Border */
+  /* border: 3px solid black; */
+  /* border-width: 3px; */
+  border-width: 5px 10px; /* top and bottom - 5; right and left - 10 */
+  /* border-top-width: 30px; */
+  border-style: solid;
+  border-color: black;
+  /* border-radius: 50%; */
+  border-top-left-radius: 50px 50%;
+  border-top-right-radius: 50px 50%;
+  /* border-radius: 10px  50px / 100px  30px; */
+
+  /* Margin */
+  /* margin-top: 10px; */
+  /* margin-right: 5px; */
+  /* margin-bottom: 10px; */
+  /* margin-left: 5px; */
+  /* margin: 10px; */
+  margin: 0 auto;
+  /* margin: 10px 5px 1px; */
+  /* margin: 10px 5px 15px 1px; */
+
+  /* display: inline; */
+}
