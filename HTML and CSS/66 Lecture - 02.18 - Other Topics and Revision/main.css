@@ -1,6 +1,7 @@
 body{
   margin: 0;
   background-color: #b2b2b2;
+  min-height: 500vh;
 }
 
 :root{
@@ -40,4 +41,54 @@ h2{
 
 li:nth-child(2n+5){
   color: red;
+}
+
+.bgImage{
+  min-height: 70vh;
+  background-image: url('./images/nature7.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.bgTransparent{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(163, 191, 146, 0.555);
+}
+.content{
+  position: relative;
+  z-index: 1;
+}
+
+/* animation */
+.animatedBox{
+  width: 100px;
+  height: 100px;
+  background-color: #8675bb;
+  margin: 0 auto;
+
+  animation: infinite linear 5s nameOfAnimation;
+}
+
+@keyframes nameOfAnimation {
+  0% {
+    transform: translateY(0px);
+    background-color: #8675bb;
+  } 5% {
+    transform: translateY(0px);
+    background-color: #8675bb;
+  } 45% {
+    transform: translateY(100px);
+    background-color: #8675bb;
+  } 55% {
+    transform: translateY(100px);
+    background-color: antiquewhite;
+  } 95% {
+    transform: translateY(0px);
+    background-color: antiquewhite;
+  } 100% {
+    transform: translateY(0px);
+    background-color: #8675bb;
+  }
 }
