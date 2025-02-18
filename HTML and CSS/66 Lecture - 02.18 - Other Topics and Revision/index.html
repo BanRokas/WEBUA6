@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lecture 66 - Table and Revision</title>
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+  <header>
+
+  </header>
+  <main>
+    <section> <!-- Measurement units -->
+      <h2>Measurement units</h2>
+      <h3>heading 3 el</h3>
+      <p>
+        Measurement units are used to set elements sizes for: width, height, gaps, font-size, radiuses and so on...
+      </p>
+      <ul>
+        <li>px</li>
+        <li>% - % of parent element</li>
+        <li>vh - viewport height - visible webpage height (100 - full height)</li>
+        <li>vw - viewport width - visible webpage width (100 - full width)</li>
+        <li>fr - fraction - grid topic</li>
+        <li>rem - root em(ephemeral) - 16px - root setting (:root)</li>
+        <li>em - ephemeral - 16px - closest ancestor element size settings</li>
+      </ul>
+    </section>
+    <section> <!-- Box Sizing -->
+      <h2>Box-Sizing</h2>
+      <p>
+        Box sizing has only 2 settings: border-box and content-box (default).<br>
+        Having border-box setting on - our elements do not enlarge from paddings or borders.
+      </p>
+      <div class="flex">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+      </div>
+    </section>
+    <section> <!-- Multimedia elements -->
+      <h2>Multimedia elements</h2>
+      <p>
+        There are many different multimedia elements: pictures, music, the sound, video recordings, voice recordings, movies, animation etc...
+      </p>
+      <p>
+        The most interesting one is iframe tag. Using it you can embed parts other websites to your own website. 
+      </p>
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11064.362846118074!2d23.895904760875457!3d54.89511135949107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2slt!4v1739899215234!5m2!1sen!2slt" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe width="979" height="560" src="https://www.youtube.com/embed/A73qxx4FGs4" title="/𝐧𝐨 𝐬𝐭𝐚𝐫𝐫𝐲 | 80&#39;s Tokyo Funky Lofi Playlist 🎧 | Broadcasting Beyond | Relax &amp; Chill &amp; Study to" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="979" height="560" src="https://www.youtube.com/embed/lzGTUbVrt4w" title="〖MAD〗 銀魂× CITRUS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+    <section> <!-- Selectors -->
+      <h2>Selectors</h2>
+      <div>
+        <h3>Attribute selectors</h3>
+        <ul>
+          <li>[attribute] - attribute name</li>
+          <li>[attribute="value"] - attribute name with specific value</li>
+          <li>[attribute~="value"] - attribute name with specific word in the value</li>
+          <li>[attribute*="value"] - attribute name with part of word</li>
+          <li>[attribute^="value"] - attribute name that starts with value</li>
+          <li>[attribute&="value"] - attribute name that ends with value</li>
+          <li>[attribute|="value"] - attribute name with value or "-" and value</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Pseudo Class selectors</h3>
+        <ul>
+          <li>Links
+            <ol>
+              <li>:link - unvisited link</li>
+              <li>:visited - visited link</li>
+              <li>:hover - mouse over the element (not only for links)</li>
+              <li>:active - reacts to the click (moment of clicking)</li>
+            </ol>
+          </li>
+          <li>:first-child - element which is the first child</li>
+          <li>:last-child - element which is the last child</li>
+          <li>:only-child - element which is the only child in the group</li>
+          <li>:first-of-type - element which is the first child of it's type</li>
+          <li>:last-of-type - element which is the last child of it's type</li>
+          <li>:only-of-type - element which is the only child of it's type in the group</li>
+          <li>nth-child(n) - selects elements by the sequents</li>
+          <li>nth-last-child(n) - selects elements by the sequents from the end</li>
+          <li>nth-of-type(n)</li>
+          <li>nth-last-of-type(n)</li>
+          <li>No need to know
+            <ul>
+              <li>:root</li>
+              <li>:not(selector) - selects the ones who are not "selector"</li>
+              <li>:empty</li>
+              <li>:fullscreen</li>
+              <li>:lang(language)</li>
+              <li>:target</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section> <!-- Revision -->
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </section>
+  </main>
+  <footer></footer>
+</body>
+</html>

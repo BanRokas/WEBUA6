@@ -1,0 +1,43 @@
+body{
+  margin: 0;
+  background-color: #b2b2b2;
+}
+
+:root{
+
+}
+section{
+  font-size: 20px;
+  min-height: 50vh;
+  overflow: auto;
+}
+h2{
+  font-size: 1.5rem; /* 24px */
+  /* font-size: 24px; */
+}
+
+.flex{
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.box{
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  background-color: #8675bb;
+  padding: 10px;
+}
+.box:hover{
+  border: 5px dashed black;
+}
+
+[src]{
+  padding: 5px;
+  border: 1px solid black;
+}
+
+li:nth-child(2n+5){
+  color: red;
+}
