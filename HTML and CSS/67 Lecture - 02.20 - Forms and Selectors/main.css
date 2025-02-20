@@ -1,0 +1,88 @@
+body{
+  margin: 0;
+  background-color: #b2acac;
+  min-height: 500vh;
+}
+
+
+/* #custom_tShirt_radio > div{
+  display: inline-block;
+}
+#custom_tShirt_radio input{
+  display: none;
+}
+#custom_tShirt_radio label{
+  border: 1px solid black;
+  background-color: aquamarine;
+  padding: 5px;
+}
+#custom_tShirt_radio label:hover{
+  background-color: #fffb7f;
+  cursor: pointer;
+}
+#custom_tShirt_radio input:checked + label{
+  background-color: green;
+}
+#custom_tShirt_radio input:checked + label:hover{
+  cursor: not-allowed;
+} */
+
+#custom_tShirt_radio{
+  > div{
+    display: inline-block;
+    > input{
+      display: none;
+      /* &:checked + label{
+        background-color: green;
+
+        &:hover{
+          cursor: not-allowed;
+        }
+      } */
+    }
+    > input:checked + label{
+      background-color: green;
+    }
+    > input:checked + label:hover{
+      cursor: not-allowed;
+    }
+    > label{
+      border: 1px solid black;
+      background-color: aquamarine;
+      padding: 5px;
+      &:hover{
+        background-color: #fffb7f;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+
+#customFileInput{
+  display: inline-block;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
+  &:has(label:hover) {
+    box-shadow: none;
+  }
+
+  > input{
+    display: none;
+  }
+  > label{
+    border: 2px solid black;
+    background-color: aliceblue;
+    padding: 3px 5px;
+  }
+  > label:hover{
+    background-color: #6d7e8e;
+    box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.3);
+    cursor: crosshair;
+  }
+}
+
+input[type='submit']{
+  display: block;
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lecture 67 - Forms and Selectors</title>
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+  <header></header>
+  <main>
+    <section> <!-- Forms -->
+      <h2>Forms</h2>
+      <p>
+        Forms are used for user to enter some inputs and for program to do something depending on those inputs.
+      </p>
+      <div>
+        <h3>Form tags</h3>
+        <ul>
+          <li>form</li>
+          <li>label</li>
+          <li>input - can vary ALOT</li>
+          <li>textarea</li>
+          <li>select</li>
+          <li>option</li>
+          <li>datalist</li>
+          <li>output</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Form attributes</h3>
+        <ul>
+          <li>type
+            <ul>
+              <li>text</li>
+              <li>password</li>
+              <li>number</li>
+              <li>email</li>
+              <li>url</li>
+              <li>file</li>
+              <li>checkbox</li>
+              <li>radio</li>
+              <li>datetime-local</li>
+              <li>submit</li>
+              <li>...</li>
+            </ul>
+          </li>
+          <li>for - connects label to input</li>
+          <li>id - connects input to label</li>
+          <li>name - create our own names for inputs</li>
+          <li>value</li>
+          <li>required</li>
+          <li>placeholder</li>
+          <li>min/max</li>
+          <li>step</li>
+          <li>minlength/maxlength</li>
+          <li>checked - checkbox/radio checked as default</li>
+          <li>selected - option selected as default</li>
+          <li>disabled - input field that is turned off</li>
+          <li>...</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Form example</h3>
+        <form>
+          <div>
+            <!-- <label for="name">Enter your name:</label> -->
+            <input type="text" name="name" id="name" placeholder="Enter your name...">
+          </div>
+          <div>
+            <label for="password">Enter your password:</label>
+            <input type="password" name="password" id="password">
+          </div>
+          <div>
+            <label for="visitTime">Select your visit time:</label>
+            <input type="datetime-local" name="visitTime" id="visitTime">
+          </div>
+          <div>
+            <label for="screenshot">Select payment screenshot:</label>
+            <input type="file" name="screenshot" id="screenshot">
+          </div>
+          <div>
+            <label for="age">Enter your age:</label>
+            <input type="number" name="age" id="age" min="0" max="999">
+          </div>
+          <div>
+            <label for="price">Enter product's price:</label>
+            <input type="number" name="price" id="price" min="0" step="0.01">
+          </div>
+          <div>
+            <label for="description">Please inform us of your problem:</label>
+            <textarea name="description" id="description"></textarea>
+          </div>
+          <div>
+            <!-- <label for="city">Select your city</label> -->
+            <select name="city" id="city" required>
+              <option value="" disabled selected>Select your city</option>
+              <option value="Kaunas">Kaunas</option>
+              <option value="Vilnius">Vilnius</option>
+              <option value="Klaipėda">Klaipdėda</option>
+              <option value="Šiauliai">Šiauliai</option>
+            </select>
+          </div>
+          <div> <!-- radio -->
+            <fieldset>
+              <legend>Select your T-Shirt size:</legend>
+              <div>
+                <label for="small">Small</label>
+                <input type="radio" name="tShirt_size" id="small" value="small">
+              </div>
+              <div>
+                <label for="medium">Medium</label>
+                <input type="radio" name="tShirt_size" id="medium" value="medium">
+              </div>
+              <div>
+                <label for="large">Large</label>
+                <input type="radio" name="tShirt_size" id="large" value="large">
+              </div>
+            </fieldset>
+          </div>
+          <div> <!-- custom radio -->
+            <fieldset id="custom_tShirt_radio">
+              <legend>Select your T-Shirt size:</legend>
+              <div>
+                <input type="radio" name="tShirt_size0" id="small0" value="small0">
+                <label for="small0">Small</label>
+              </div>
+              <div>
+                <input type="radio" name="tShirt_size0" id="medium0" value="medium0">
+                <label for="medium0">Medium</label>
+              </div>
+              <div>
+                <input type="radio" name="tShirt_size0" id="large0" value="large0">
+                <label for="large0">Large</label>
+              </div>
+            </fieldset>
+          </div>
+          <div id="customFileInput">
+            <input type="file" name="picture" id="picture">
+            <label for="picture">Select payment screenshot</label>
+          </div>
+          <input type="submit" value="Submit the Form">
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer></footer>
+</body>
+</html>
