@@ -1,0 +1,39 @@
+Already know:
+  HTML:
+    Tags/Elements
+    Semantics
+    Table
+    Grouping elements
+    Multimedia elements
+  CSS:
+    Different ways of writing CSS
+    Selectors
+    Displays
+    Backgrounds
+    Colors
+    Browser default styles
+    Parent and children elements
+    CSS styles priorities
+    Box Model
+    Positions
+    Fonts from google fonts
+    Icons
+    Measurement units
+    Box Sizing
+
+We will learn:
+  HTML:
+    Forms
+  CSS:
+    Selectors
+    Displays: Flex and Grid
+    Animation
+    Transition
+    Responsive Design
+    Libraries/Frameworks
+  Others:
+    Git and Github
+  JS:
+    something something
+  React/Angular/Vue:
+    ???? :)
