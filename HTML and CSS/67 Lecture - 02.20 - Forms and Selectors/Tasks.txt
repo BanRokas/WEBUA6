@@ -1,0 +1,6 @@
+Table:
+  1) Create a table with at least 4 body rows and 5 columns.
+  2) Write CSS for the table.
+  3) Write CSS so if user hovers over the element of the table, it background-color changes.
+  4) Write CSS so if user hovers over the element of the table, the row's background-color changes.
+  5+) Write CSS so if user hovers over the element of the table, the column's background-color changes.

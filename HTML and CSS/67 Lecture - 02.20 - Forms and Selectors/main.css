@@ -86,3 +86,31 @@ body{
 input[type='submit']{
   display: block;
 }
+
+table{
+  border-collapse: collapse;
+  margin: 0 auto;
+  overflow: hidden;
+
+  td, th{
+    position: relative;
+    border: 1px solid black;
+    padding: 3px 5px;
+  }
+  td:hover, th:hover{
+    background-color: #fffb7f;
+  }
+  tr:hover{
+    background-color: #6d7e8e;
+  }
+  td:hover::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    height: 10000px;
+    top: -5000px;
+    background-color: #ca7fff;
+  }
+}
