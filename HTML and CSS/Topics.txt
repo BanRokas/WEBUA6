@@ -5,6 +5,7 @@ Already know:
     Table
     Grouping elements
     Multimedia elements
+    Forms
   CSS:
     Different ways of writing CSS
     Selectors
@@ -22,10 +23,7 @@ Already know:
     Box Sizing
 
 We will learn:
-  HTML:
-    Forms
   CSS:
-    Selectors
     Displays: Flex and Grid
     Animation
     Transition
