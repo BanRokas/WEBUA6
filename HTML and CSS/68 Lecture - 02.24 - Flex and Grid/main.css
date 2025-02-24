@@ -6,7 +6,7 @@ body{
 section{
   min-height: 50vh;
 
-  > h2{
+  > h2, h3{
     text-align: center;
   }
 }
@@ -32,5 +32,45 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+}
+
+/* Grid */
+
+.threeColumns{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.gridContainerExample{
+  border: 3px dashed black;
+  margin: 0 auto;
+  width: 80%;
+  height: 500px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr 1fr 4fr;
+  grid-template-rows: 1fr 100px 2fr 2fr; /* 500px - 100px = 400px/5 => 1fr = 80px */
+  gap: 10px;
+
+  > div{
+    background-color: azure;
+    border: 1px solid black;
+    font-size: 2rem;
+    font-weight: bold;
+
+    display: grid;
+    place-items: center;
+  }
+  > div:nth-child(10){
+    grid-area: 3 / 1 / 4 / 3;
+  }
+  > div:nth-child(3){
+    grid-area: 2 / 3 / 4 / 6;
+  }
+  > div:nth-child(1){
+    grid-area: 3 / 4 / -1 / -1;
+    z-index: 1;
   }
 }

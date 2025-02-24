@@ -59,10 +59,83 @@
       </div>
     </section>
     <section> <!-- Grid theory -->
-
+      <h2>Grid</h2>
+      <p>
+        We use display of Grid, then we want to display elements inside of that grid parent element with all the control over the children element we can want. But we do need to create the grid itself, by telling how many and what sized columns and rows we create inside of the grid AND then we need to tell each children what position inside of that grid they take.<br>
+        Grid got quite a few additional properties for parent element (grid container) and children elements (grid items).
+      </p>
+      <h3>Grid Properties</h3>
+      <div class="threeColumns">
+        <div>
+          <h4>Parent</h4>
+          <ul>
+            <li>display: grid;</li>
+            <li>grid-template-columns</li>
+            <li>grid-template-rows</li>
+            <li>grid-template: grid-template-rows / grid-template-columns</li>
+            <li>grid-template-areas</li>
+            <li>row-gap</li>
+            <li>column-gap</li>
+            <li>gap: row-gap column-gap;</li>
+            <li>align-content</li>
+            <li>justify-content</li>
+            <li>place-content: align-content justify-content;</li>
+            <li>align-items</li>
+            <li>justify-items</li>
+            <li>place-items: align-items justify-items;</li>
+            <li>grid-auto-columns</li>
+            <li>grid-auto-rows</li>
+            <li>grid-auto-flow</li>
+            <li>grid: grid-template-rows, grid-template-columns, grid-template-areas, grid-auto-rows, grid-auto-columns, grid-auto-flow;</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Children</h4>
+          <ul>
+            <li>grid-row-start</li>
+            <li>grid-column-start</li>
+            <li>grid-row-end</li>
+            <li>grid-column-end</li>
+            <li>grid-row: start / end</li>
+            <li>grid-column: start / end</li>
+            <li>grid-area: row-start / column-start / row-end / column-end;</li>
+            <li>align-self</li>
+            <li>justify-self</li>
+            <li>place-self</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Units and Functions</h4>
+          <ul>
+            <li>fr</li>
+            <li>min-content</li>
+            <li>max-content</li>
+            <li>auto</li>
+            <li>fit-content()</li>
+            <li>minmax(min, max)</li>
+            <li>repeat(howMany, ofWhat)</li>
+            <li>masonry</li>
+            <li>subgrid</li>
+          </ul>
+        </div>
+      </div>
     </section>
     <section> <!-- Grid practice -->
-
+      <h2>Grid Example</h2>
+      <div class="gridContainerExample">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+      </div>
     </section>
     <section> <!-- Flex vs Grid -->
 
