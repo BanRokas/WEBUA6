@@ -8,9 +8,24 @@
   <script src="./main.js" defer></script>
 </head>
 <body>
-  <header></header>
+  <header>
+    <div>
+      <a href="#"> <!-- navigates to top of page -->
+        <img src="" alt="">
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#flexT">Flex Theory</a></li>
+        <li><a href="#flexP">Flex Practice</a></li>
+        <li><a href="#gridT">Grid Theory</a></li>
+        <li><a href="#gridP">Grid Practice</a></li>
+        <li><a href="#flexVsGrid">Flex vs Grid</a></li>
+      </ul>
+    </nav>
+  </header>
   <main>
-    <section> <!-- Flex theory -->
+    <section id="flexT"> <!-- Flex theory -->
       <h2>Flex</h2>
       <p>
         We use display of Flex then we want to display our elements on the screen with a bit more control over them. Even though we do not have too much control with every single element separately, we do control them as a group quite nicely and easily.<br>
@@ -40,7 +55,7 @@
         <li>align-self - align-items properties for individual item</li>
       </ul>
     </section>
-    <section> <!-- Flex practice -->
+    <section id="flexP"> <!-- Flex practice -->
       <h2>Flex example</h2>
       <div class="flexContainerExample">
         <!-- div{$}*12 -->
@@ -58,7 +73,7 @@
         <div>12</div>
       </div>
     </section>
-    <section> <!-- Grid theory -->
+    <section id="gridT"> <!-- Grid theory -->
       <h2>Grid</h2>
       <p>
         We use display of Grid, then we want to display elements inside of that grid parent element with all the control over the children element we can want. But we do need to create the grid itself, by telling how many and what sized columns and rows we create inside of the grid AND then we need to tell each children what position inside of that grid they take.<br>
@@ -120,7 +135,7 @@
         </div>
       </div>
     </section>
-    <section> <!-- Grid practice -->
+    <section id="gridP"> <!-- Grid practice -->
       <h2>Grid Example</h2>
       <div class="gridContainerExample">
         <div>1</div>
@@ -137,7 +152,7 @@
         <div>12</div>
       </div>
     </section>
-    <section> <!-- Flex vs Grid -->
+    <section id="flexVsGrid"> <!-- Flex vs Grid -->
       <h2>Flex VS Grid</h2>
       <a href="https://youtu.be/3elGSZSWTbM" target="_blank">Flex or Grid by Kevin Powell</a>
       <p>

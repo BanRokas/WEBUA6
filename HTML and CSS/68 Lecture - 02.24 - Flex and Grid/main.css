@@ -1,3 +1,7 @@
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   margin: 0;
   background-color: #b6b6b6;
@@ -72,5 +76,53 @@ section{
   > div:nth-child(1){
     grid-area: 3 / 4 / -1 / -1;
     z-index: 1;
+  }
+}
+
+/* Header */
+
+section[id]{
+  scroll-margin-top: 80px;
+}
+
+header{
+  height: 80px;
+  padding: 0 20px;
+  background-color: antiquewhite;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  > div{
+
+  }
+  > nav{
+
+    > ul{
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+
+      display: flex;
+      gap: 10px;
+
+      > li{
+
+        > a{
+          text-decoration: none;
+          color: black;
+          font-size: 20px;
+          font-weight: bold;
+        }
+        > a:hover{
+          color: green;
+        }
+      }
+    }
   }
 }
