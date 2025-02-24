@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lecture 68 - Flex and Grid</title>
+  <link rel="stylesheet" href="./main.css">
+  <script src="./main.js" defer></script>
+</head>
+<body>
+  <header></header>
+  <main>
+    <section> <!-- Flex theory -->
+      <h2>Flex</h2>
+      <p>
+        We use display of Flex then we want to display our elements on the screen with a bit more control over them. Even though we do not have too much control with every single element separately, we do control them as a group quite nicely and easily.<br>
+        Flex got quite a few additional properties for parent element (flex container) and children elements (flex items).
+      </p>
+      <h3>Flex properties</h3>
+      <h4>Parent</h4>
+      <ul>
+        <li>display: flex;</li>
+        <li>flex-direction - in which direction elements are displayed</li>
+        <li>flex-wrap - do elements wrap to the other line or not</li>
+        <li>flex-flow: flex-direction and flex-wrap;</li>
+        <li>justify-content: how elements displayed on main axis</li>
+        <li>align-content: how elements displayed on cross axis</li>
+        <li>align-items: how elements displayed on cross axis</li>
+        <li>row-gap</li>
+        <li>column-gap</li>
+        <li>gap - gap in between children elements (row and column)</li>
+      </ul>
+      <h4>Children</h4>
+      <ul>
+        <li>order - you can swap the order of children elements</li>
+        <li>flex-grow</li>
+        <li>flex-shrink</li>
+        <li>flex-basis</li>
+        <li>flex: flex-grow flex-shrink flex-basis;</li>
+        <li>align-self - align-items properties for individual item</li>
+      </ul>
+    </section>
+    <section> <!-- Flex practice -->
+      <h2>Flex example</h2>
+      <div class="flexContainerExample">
+        <!-- div{$}*12 -->
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+      </div>
+    </section>
+    <section> <!-- Grid theory -->
+
+    </section>
+    <section> <!-- Grid practice -->
+
+    </section>
+    <section> <!-- Flex vs Grid -->
+
+    </section>
+  </main>
+  <footer></footer>
+</body>
+</html>
