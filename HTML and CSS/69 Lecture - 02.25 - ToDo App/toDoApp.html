@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Do App</title>
+  <link rel="stylesheet" href="./toDoApp.css">
+  <script src="./main.js" defer></script>
+</head>
+<body>
+  <header>
+    <div>
+      <h2>Best <span>ToDo</span> App</h2>
+    </div>
+    <div>
+      <ul>
+        <li><a href=""><i class="bi bi-facebook"></i></a></li>
+        <li><a href=""><i class="bi bi-twitter"></i></a></li>
+        <li><a href=""><i class="bi bi-linkedin"></i></a></li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <section class="addNewTask">
+      <h2>Yours Tasks</h2>
+      <form id="addNewTask">
+        <div>
+          <input 
+            type="text"
+            name="task" id="task"
+            placeholder="e.g. wash dishes"
+          >
+          <input
+            type="submit"
+            value="Add"
+          >
+        </div>
+        <span id="error">There was an error</span>
+      </form>
+    </section>
+    <section></section>
+  </main>
+</body>
+</html>
