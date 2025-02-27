@@ -2,6 +2,8 @@
 
 :root{
   --main-blue-color: #645cff;
+  --main-blue-color-darker: #3831c9;
+  --main-blue-color-lighter: #847eee;
   --main-container-background: #fff;
   --main-background-color: #f8fafc;
   --shadow-color: #cbcbcb;
@@ -47,6 +49,10 @@ header{
 
     > li > a > i{
       color: var(--main-blue-color);
+
+      &:hover{
+        color: var(--main-blue-color-lighter);
+      }
     }
   }
 
@@ -85,7 +91,7 @@ main{
       > div{
         display: flex;
         border-radius: 5px;
-        height: 30px;
+        height: 35px;
         margin-bottom: 10px;
         
         > input:nth-child(1){
@@ -109,13 +115,19 @@ main{
           width: 20%;
           background-color: var(--main-blue-color);
           color: white;
-          font-weight: bold;
+          /* font-weight: bold; */
+          font-size: 20px;
           text-align: center;
 
           border-width: 0;
           border-radius: 0;
           border-top-right-radius: 5px;
           border-bottom-right-radius: 5px;
+
+          &:hover{
+            background-color: var(--main-blue-color-darker);
+            cursor: pointer;
+          }
         }
       }
 
@@ -128,5 +140,49 @@ main{
     }
    
   }
-}
 
+  > section#tasks{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    > div.task:hover{
+      box-shadow: 1px 8px 15px 5px var(--shadow-color);
+    }
+    > div.task{
+      background-color: var(--main-container-background);
+      box-shadow: -2px 3px 15px 3px var(--shadow-color);
+      border-radius: 5px;
+      padding: 20px 50px;
+ 
+      display: flex;
+      align-items: center;
+      gap: 15px;
+
+      > h4{
+        font-size: 1.5rem;
+        flex: 1;
+        margin: 0 0 0 10px;
+        text-transform: capitalize;
+      }
+      > h4.crossOutWord{
+        text-decoration: line-through 3px;
+      }
+
+      > i.bi-check-circle, i.bi-pencil-square{
+        color: var(--success-color);
+      }
+      > i.bi-trash-fill{
+        color: var(--warning-color);
+      }
+      > i.bi-pencil-square:hover, 
+        i.bi-trash-fill:hover{
+        cursor: pointer;
+        transform: scale(1.5);
+      }
+      > i.hideDisplay{
+        visibility: hidden;
+      }
+    }
+  }
+}
