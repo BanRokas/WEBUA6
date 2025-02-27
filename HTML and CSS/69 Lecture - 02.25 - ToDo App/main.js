@@ -29,6 +29,7 @@ class ToDoTask{
     
     taskDiv.addEventListener('dblclick', () => this.completeTask(checkIcon, heading));
     deleteIcon.addEventListener('click', () => this.deleteTask(taskDiv));
+    editIcon.addEventListener('click', () => this.editTask(heading));
 
     taskDiv.append(checkIcon, heading, editIcon, deleteIcon);
     return taskDiv;
@@ -58,6 +59,29 @@ class ToDoTask{
       }
     });
     localStorage.setItem('toDoData', JSON.stringify(changedLocalStorageData));
+  }
+  editTask(heading){
+    const headingInput = document.createElement('input');
+    headingInput.value = this.name;
+    headingInput.setAttribute('placeholder', `Editing: ${this.name}...`);
+    heading.replaceWith(headingInput);
+    headingInput.addEventListener('focusout', () => {
+      this.name = headingInput.value;
+      heading.textContent = headingInput.value;
+
+      const localStorageData = JSON.parse(localStorage.getItem('toDoData'));
+      const changedLocalStorageData = localStorageData.map(task => {
+        if(task.id === this.id){
+          return {
+            ...task,
+            name: headingInput.value
+          }
+        } else { return task };
+      });
+      localStorage.setItem('toDoData', JSON.stringify(changedLocalStorageData));
+
+      headingInput.replaceWith(heading);
+    });
   }
 }
 
