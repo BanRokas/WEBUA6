@@ -8,21 +8,43 @@ class ToDoTask{
   render(){
     const taskDiv = document.createElement('div');
     taskDiv.classList.add('task');
-
+    
     const checkIcon = document.createElement('i');
-    checkIcon.classList.add('bi', 'bi-check-circle', 'hideDisplay');
+    checkIcon.classList.add('bi', 'bi-check-circle');
+    if(this.isCompleted === false){
+      checkIcon.classList.add('hideDisplay');
+    }
     
     const heading = document.createElement('h4');
     heading.textContent = this.name;
-
+    if(this.isCompleted === true){
+      heading.classList.add('crossOutWord');
+    }
+    
     const editIcon = document.createElement('i');
     editIcon.classList.add('bi', 'bi-pencil-square');
-
+    
     const deleteIcon = document.createElement('i');
     deleteIcon.classList.add('bi', 'bi-trash-fill');
-
+    
+    taskDiv.addEventListener('dblclick', () => this.completeTask(checkIcon, heading))
     taskDiv.append(checkIcon, heading, editIcon, deleteIcon);
     return taskDiv;
+  }
+  completeTask(checkIcon, heading){
+    checkIcon.classList.toggle('hideDisplay');
+    heading.classList.toggle('crossOutWord');
+
+    const localStorageData = JSON.parse(localStorage.getItem('toDoData'));
+    const changedLocalStorageData = localStorageData.map(task => {
+      if(task.id === this.id){
+        return {
+          ...task,
+          isCompleted: !task.isCompleted
+        }
+      } else { return task };
+    });
+    localStorage.setItem('toDoData', JSON.stringify(changedLocalStorageData));
   }
 }
 
