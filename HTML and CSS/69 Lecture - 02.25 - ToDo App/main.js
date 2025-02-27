@@ -65,6 +65,7 @@ class ToDoTask{
     headingInput.value = this.name;
     headingInput.setAttribute('placeholder', `Editing: ${this.name}...`);
     heading.replaceWith(headingInput);
+    headingInput.focus();
     headingInput.addEventListener('focusout', () => {
       this.name = headingInput.value;
       heading.textContent = headingInput.value;
