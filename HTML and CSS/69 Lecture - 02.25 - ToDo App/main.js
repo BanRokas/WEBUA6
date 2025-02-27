@@ -27,7 +27,9 @@ class ToDoTask{
     const deleteIcon = document.createElement('i');
     deleteIcon.classList.add('bi', 'bi-trash-fill');
     
-    taskDiv.addEventListener('dblclick', () => this.completeTask(checkIcon, heading))
+    taskDiv.addEventListener('dblclick', () => this.completeTask(checkIcon, heading));
+    deleteIcon.addEventListener('click', () => this.deleteTask(taskDiv));
+
     taskDiv.append(checkIcon, heading, editIcon, deleteIcon);
     return taskDiv;
   }
@@ -43,6 +45,17 @@ class ToDoTask{
           isCompleted: !task.isCompleted
         }
       } else { return task };
+    });
+    localStorage.setItem('toDoData', JSON.stringify(changedLocalStorageData));
+  }
+  deleteTask(taskDiv){
+    taskDiv.remove();
+
+    const localStorageData = JSON.parse(localStorage.getItem('toDoData'));
+    const changedLocalStorageData = localStorageData.filter(task => {
+      if(task.id !== this.id){
+        return task;
+      }
     });
     localStorage.setItem('toDoData', JSON.stringify(changedLocalStorageData));
   }
