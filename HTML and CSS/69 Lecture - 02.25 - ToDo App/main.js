@@ -4,16 +4,26 @@ document
     e.preventDefault();
 
     const inputValue = e.target.elements.task.value;
+    const task = {
+      id: Number(new Date()).toString(),
+      name: inputValue,
+      isCompleted: false
+    };
+    const taskDiv = new ToDoTask(task);
 
-    const taskDiv = new ToDoTask(inputValue);
+    const localStorageData = JSON.parse(localStorage.getItem('toDoData')) || [];
+    localStorageData.push(task);
+    localStorage.setItem('toDoData', JSON.stringify(localStorageData));
 
     document.querySelector('#tasks').appendChild(taskDiv);
     e.target.reset();
   });
 
 class ToDoTask{
-  constructor(taskName){
-    this.taskName = taskName;
+  constructor({ id, name, isCompleted }){
+    this.id = id;
+    this.name = name;
+    this.isCompleted = isCompleted;
     return this.render();
   }
   render(){
@@ -24,7 +34,7 @@ class ToDoTask{
     checkIcon.classList.add('bi', 'bi-check-circle', 'hideDisplay');
     
     const heading = document.createElement('h4');
-    heading.textContent = this.taskName;
+    heading.textContent = this.name;
 
     const editIcon = document.createElement('i');
     editIcon.classList.add('bi', 'bi-pencil-square');
