@@ -21,10 +21,10 @@ Already know:
     Icons
     Measurement units
     Box Sizing
+    Displays: Flex and Grid
 
 We will learn:
   CSS:
-    Displays: Flex and Grid
     Animation
     Transition
     Responsive Design
