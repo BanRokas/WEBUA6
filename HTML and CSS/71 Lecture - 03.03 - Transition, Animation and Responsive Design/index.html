@@ -59,7 +59,35 @@
         <li>transition-behavior: normal | allow-discrete - ???</li>
         <li>transition: duration delay ...</li>
       </ul>
+      <p>
+        Not all styles can have a transition.
+      </p>
       <div class="transition">Transition</div>
+    </section>
+    <section> <!-- animation -->
+      <h2>Animation</h2>
+      <p>
+        Animation is controlling how element changes in between many states.<br>
+        For animation to start, there is no need for user interaction, tho there can be user interaction. Animation can repeat as many times as we want.<br>
+        During the animation, same styles can change many times in between different states.
+      </p>
+      <ul>
+        <li>animation-duration: seconds - how long does cycle of animation takes</li>
+        <li>animation-delay: seconds - after what delay cycle of animation restars</li>
+        <li>animation-timing-function: function - how the time is used to display the whole animation cycle</li>
+        <li>animation-name: randomName - we think of name to give an animation</li>
+        <li>animation-iteration-count: number | infinite - how many cycles of animations has to run before it stops</li>
+        <li>animation-direction: normal | reverse | alternate | alternate-reverse - from which end animation starts and does it alternate</li>
+        <li>animation-play-state: running | paused;</li>
+        <li>animation-fill-mode: none | forwards | backwards | both - tells how element is displayed before and/or after the animation</li>
+        <li>animation-composition: replace | add | accumulate - how different tranform values work in between different frames</li>
+        <li>animation: duration delay ...</li>
+      </ul>
+      <p>
+        So, for the animation settings to do something, we need to set up the animation keyframes as well.<br>
+        (exhample: @keyframes randomName { 0%{} 50%{} 100%{} })
+      </p>
+      <div class="animation">Animation</div>
     </section>
     <section></section>
   </main>
