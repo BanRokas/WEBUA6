@@ -57,6 +57,7 @@ main{
     position: relative; 
 
     > h2{
+      font-size: calc(10vw - 2rem);
       color: white;
       font-weight: normal;
       margin: 0;
@@ -127,5 +128,33 @@ footer{
   > p{
     font-size: 0.7rem;
     text-align: center;
+  }
+}
+
+@media (min-width: 500px){
+  header{
+    > nav > ul{
+      flex-direction: row;
+  
+      > li{
+        > a{
+          padding: 15px;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+  main{
+    > section#content{
+      flex-direction: row;
+
+      > div.card{
+        flex-direction: column-reverse;
+
+        > img{
+          width: 100%;
+        }
+      }
+    }
   }
 }
