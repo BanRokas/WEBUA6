@@ -118,3 +118,14 @@ main{
     }
   } */
 }
+
+footer{
+  background-color: #5e7dac;
+  border: 3px solid white;
+  border-radius: 25px 0;
+
+  > p{
+    font-size: 0.7rem;
+    text-align: center;
+  }
+}
