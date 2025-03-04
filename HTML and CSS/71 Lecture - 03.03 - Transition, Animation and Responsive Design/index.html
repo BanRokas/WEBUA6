@@ -108,16 +108,34 @@
         <li>xx-large - large desktops - 1400px => ...</li>
       </ol>
       <p>My personal suggestion (Rokas Banaitis) - to have 3 main breakpoints at around: 0=>500px, 500=>800px-900px, 800px-900px => ... </p>
-      <p></p>
-      <p></p>
+      <p>
+        To create a breakpoint in CSS, we need to write a media query for it.<br>
+        Media query in CSS is written like this: @media (min-width: number_px){ our css for this media query }
+      </p>
+      <p>
+        Media queries do not give any additional priority to CSS selectors within it. That is why we need to write media query CSS selectors with either higher specificity (not suggested) or higher order having same specificity (way better).<br>
+        Media query styles do not dissapear once we move on to the next media query.<br>
+        You do not write media query for the first layout.
+      </p>
       <h2>Mobile First</h2>
-      <p></p>
-      <p></p>
+      <p>
+        Mobile First design principle is that we are styling our base site view for mobile devices and after that we're moving to the bigger screens.<br>
+        That's being done because of multiple reasons: more users are using mobiles to surf the internet rather than computers; it is easier to add more content rather than removing it; the less space you have - the more you focus on displaying most important information; ...
+      </p>
+      <p>
+        Using Mobile Design principle you need to write your media queries using min-width, not max-width.
+      </p>
       <p>
         A few articles about positives and negatives of Mobile First design principle:<br>
         <a href="https://www.bairesdev.com/blog/what-is-mobile-first-css-is-it-necessary" target="_blank">what-is-mobile-first-css-is-it-necessary</a><br>
         <a href="https://alistapart.com/article/mobile-first-css-is-it-time-for-a-rethink" target="_blank">mobile-first-css-is-it-time-for-a-rethink</a>
       </p>
+      <div class="responsiveDesignTest">
+        <div class="header">header</div>
+        <div>main</div>
+        <div class="widget">widget</div>
+        <div>footer</div>
+      </div>
     </section>
   </main>
   <footer></footer>
