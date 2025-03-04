@@ -67,4 +67,54 @@ main{
       right: 20px;
     }
   }
+
+  > section#content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    > div.card{
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+
+      > div.text{
+        flex: 5;
+
+        > h3{
+          margin-top: 0;
+        }
+      }
+      > img{
+        flex: 4;
+        width: 35%;
+        height: auto;
+        border: 2px solid black;
+        object-fit: contain;
+      }
+    }
+  }
+
+  /* In case of using float for image instead of flex for card */
+  /* > section#content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    > div.card{
+      
+      > img{
+        float: right;
+        width: 35%;
+        height: auto;
+        border: 2px solid black;
+        object-fit: contain;
+        margin-left: 10px;
+        margin-bottom: 10px;
+      }
+      > h3{
+        margin-top: 0;
+      }
+    }
+  } */
 }
