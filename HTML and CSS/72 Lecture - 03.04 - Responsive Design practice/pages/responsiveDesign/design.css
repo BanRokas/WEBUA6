@@ -40,3 +40,31 @@ header{
     }
   }
 }
+
+main{
+  margin: 10px 0;
+
+  > section:not(:last-child){
+    margin-bottom: 20px;
+  }
+
+  > section#hero{
+    background-image: url('./extra/Gaudi\ Chimneys.jpg');
+    background-size: cover;
+    background-position: left top;
+    height: 30vh;
+
+    position: relative; 
+
+    > h2{
+      color: white;
+      font-weight: normal;
+      margin: 0;
+      text-align: right;
+
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+  }
+}
