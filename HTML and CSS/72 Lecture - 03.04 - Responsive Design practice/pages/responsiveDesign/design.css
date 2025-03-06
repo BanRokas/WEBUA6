@@ -148,7 +148,7 @@ footer{
     > section#hero{
       height: 50vh;
 
-      >h2{
+      > h2{
         font-size: 2.3rem;
       }
     }
@@ -170,3 +170,37 @@ footer{
   }
 }
 
+@media (min-width: 900px){
+  main{
+    > section#hero{
+      height: 60vh;
+
+      > h2{
+        font-size: 4rem;
+      }
+    }
+
+    > section#content{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+
+
+      > div.card{
+        flex-direction: row;
+
+        > div.text{
+          flex: 2;
+        }
+        > img{
+          flex: 1;
+          padding: 15px;
+          object-fit: contain;
+          height: auto;
+          width: 30%;
+        }
+
+      }
+    }
+  }
+}
