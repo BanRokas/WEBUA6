@@ -15,7 +15,7 @@ class ToDoTask{
       checkIcon.classList.add('hideDisplay');
     }
     
-    const heading = document.createElement('h4');
+    const heading = document.createElement('h3');
     heading.textContent = this.name;
     if(this.isCompleted === true){
       heading.classList.add('crossOutWord');
