@@ -69,6 +69,19 @@ main{
   > section:not(#gallery){
     padding: var(--screen-size-padding);
   }
+  > section{
+    > h2{
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      word-spacing: 10px;
+      font-size: 2.5rem;
+
+      > span{
+        color: var(--main-color);
+      }
+    }
+  }
 
   > #home{
     height: 100vh;
@@ -106,19 +119,6 @@ main{
   }
 
   > #about{
-
-    > h2{
-      text-align: center;
-      text-transform: uppercase;
-      letter-spacing: 4px;
-      word-spacing: 10px;
-      font-size: 2.5rem;
-
-      > span{
-        color: var(--main-color);
-      }
-    }
-
     > div.image{
       > img{
         width: 100%;
@@ -136,6 +136,37 @@ main{
 
         &:hover{
           color: var(--main-color-light);
+        }
+      }
+    }
+  }
+
+  > #services{
+    background-color: #f8fbfc;
+
+    > .servicesContainer{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+
+      > div{
+        display: grid;
+        gap: 10px;
+        justify-items: center;
+        text-align: center;
+
+        > i{
+          background-color: var(--main-color);
+          font-size: 2rem;
+          padding: 10px;
+        }
+        > h3{
+          font-size: 1.5rem;
+          text-transform: uppercase;
+          margin: 0;
+        }
+        > p{
+          margin: 0;
         }
       }
     }
