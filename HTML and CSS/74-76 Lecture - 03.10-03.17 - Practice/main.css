@@ -2,7 +2,8 @@
 
 :root{
   --main-color: #645cff;
-  --main-color-light: #a29ef0;
+  --main-color-light: #9994f4;
+  --main-color-dark: #4c43f7;
   --screen-size-padding: 30px;
   
   line-height: 1.5;
@@ -61,4 +62,48 @@ header{
       }
     }
   }
+}
+
+main{
+  > section:not(#gallery){
+    padding: var(--screen-size-padding);
+  }
+
+  > #home{
+    height: 100vh;
+    background-color: var(--main-color);
+    text-align: center;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    > h1{
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      word-spacing: 10px;
+      font-size: 3rem;
+      margin: 0;
+    }
+    > p{
+      letter-spacing: 1px;
+      word-spacing: 2px;
+      margin: 0;
+    }
+    > button{
+      text-transform: capitalize;
+      background-color: var(--main-color);
+      border: 0;
+      border-radius: 5px;
+      color: white;
+      box-shadow: 0 1px 3px 1px var(--main-color-dark);
+      padding: 5px;
+    }
+  }
+
+  
+
 }
