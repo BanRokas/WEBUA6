@@ -22,15 +22,14 @@ Already know:
     Measurement units
     Box Sizing
     Displays: Flex and Grid
-
-We will learn:
-  CSS:
     Animation
     Transition
     Responsive Design
     Libraries/Frameworks
-  Others:
-    Git and Github
+    Accessibility
+    Preprocessors
+
+We will learn:
   JS:
     something something
   React/Angular/Vue:
