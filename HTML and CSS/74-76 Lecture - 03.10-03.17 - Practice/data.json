@@ -1,0 +1,17 @@
+{
+  "services":[
+    {
+      "icon": "bi bi-wallet-fill",
+      "title": "Saving money",
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil excepturi delectus consectetur."
+    },{
+      "icon": "bi bi-tree-fill",
+      "title": "Endless hiking",
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil excepturi delectus consectetur."
+    },{
+      "icon": "bi bi-emoji-smile-fill",
+      "title": "Amazing comfort",
+      "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil excepturi delectus consectetur."
+    }
+  ]
+}
