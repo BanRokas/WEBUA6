@@ -172,4 +172,65 @@ main{
     }
   }
 
+  > #tours{
+
+    > .toursContainer{
+      display: grid;
+      gap: 20px;
+
+      > div{
+        box-shadow: 0 1px 3px 1px #e8e8e8;
+        height: 350px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        > div.image{
+          height: 70%;
+          position: relative;
+
+          > img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+          }
+          > p{
+            position: absolute;
+            top: 10px;
+            left: 0;
+            padding: 5px 10px;
+            margin: 0;
+            background-color: var(--main-color);
+          }
+        }
+
+        > div.info{
+          padding: 15px;
+
+          > h3{
+            margin-top: 0;
+            font-size: 1.5rem;
+          }
+          > div{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            > a{
+              color: var(--main-color);
+              text-decoration: none;
+            }
+            > div{
+              display: flex;
+              flex-direction: column;
+            }
+          }
+
+        }
+      }
+    }
+  }
+
 }

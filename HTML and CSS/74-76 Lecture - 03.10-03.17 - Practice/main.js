@@ -2,7 +2,7 @@
   fetch(`./data.json`)
     .then(res => res.json())
     .then(data => {
-      // console.log(data);
+      console.log(data);
       // code for displaying services cards
       const servicesContainer = document.querySelector('#services > .servicesContainer');
       data.services.forEach(service => {

@@ -13,5 +13,40 @@
       "title": "Amazing comfort",
       "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil excepturi delectus consectetur."
     }
+  ],
+  "tours":[
+    {
+      "title": "Tibet Adventure",
+      "location": "China",
+      "duration": 6,
+      "price": 2100,
+      "date": "August 14th, 2022",
+      "image": "https://live.staticflickr.com/4672/25483761677_8d40083c44_b.jpg",
+      "mapsLink": "https://maps.app.goo.gl/TM1rnpMT8pgqGaFu8"
+    },{
+      "title": "Best of Java",
+      "location": "Indonesia",
+      "duration": 10,
+      "price": 4100,
+      "date": "Ocotber 11th, 2022",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Bromo-Semeru-Batok-Widodaren.jpg",
+      "mapsLink": "https://maps.app.goo.gl/e1WuqF2U6ejg9kDq5"
+    },{
+      "title": "Explore Hong Kong",
+      "location": "Hong Kong",
+      "duration": 12,
+      "price": 3100,
+      "date": "September 26th, 2022",
+      "image": "https://www.discoverhongkong.com/content/dam/dhk/intl/explore/attractions/the-charm-of-the-bright-city/the-charm-of-the-bright-city-1920x1080.jpg",
+      "mapsLink": "https://maps.app.goo.gl/JjNAnH8XSDhqNurE8"
+    },{
+      "title": "Kenya Highlights",
+      "location": "Kenya",
+      "duration": 22,
+      "price": 5400,
+      "date": "December 5th, 2022",
+      "image": "https://www.planetware.com/wpimages/2020/11/kenya-top-attractions-intro-paragraph-amboseli.jpg",
+      "mapsLink": "https://maps.app.goo.gl/Cw8FnxudRc3vXeux8"
+    }
   ]
 }
