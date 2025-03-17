@@ -5,6 +5,7 @@
   --main-color-light: #9994f4;
   --main-color-dark: #4c43f7;
   --screen-size-padding: 30px;
+  --section-bg-color-1: #f8fbfc;
   
   line-height: 1.3;
   font-size: 13px;
@@ -142,7 +143,7 @@ main{
   }
 
   > #services{
-    background-color: #f8fbfc;
+    background-color: var(--section-bg-color-1);
 
     > .servicesContainer{
       display: grid;
@@ -232,6 +233,23 @@ main{
             }
           }
         }
+      }
+    }
+  }
+
+  > #gallery{
+    background-color: var(--section-bg-color-1);
+    padding-top: var(--screen-size-padding);
+
+    > .galleryContainer{
+      background-color: var(--main-color);
+
+      > img{
+        width: 100%;
+        height: 350px;
+
+        object-fit: cover;
+        object-position: center;
       }
     }
   }

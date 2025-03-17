@@ -3,6 +3,7 @@
     .then(res => res.json())
     .then(data => {
       console.log(data);
+
       // code for displaying services cards
       const servicesContainer = document.querySelector('#services > .servicesContainer');
       data.services.forEach(service => {
@@ -18,6 +19,16 @@
         const tourCard = createTourCard(tour);
         // console.log(tourCard);
         toursContainer.appendChild(tourCard);
+      });
+
+      // code for displaying images in gallery
+      const galleryContainer = document.querySelector('#gallery > .galleryContainer');
+      data.tours.forEach(tour => {
+        const image = document.createElement('img');
+        image.setAttribute('src', tour.image);
+        image.setAttribute('alt', tour.title);
+
+        galleryContainer.appendChild(image);
       });
     });
 })();
