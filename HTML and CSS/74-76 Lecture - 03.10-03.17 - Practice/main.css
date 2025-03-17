@@ -254,4 +254,47 @@ main{
     }
   }
 
+  > #subscribe{
+    background-color: var(--main-color);
+    text-align: center;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    > div{
+      letter-spacing: 4px;
+      word-spacing: 7px;
+      font-size: 1.5rem;
+      color: white;
+
+      > h2{
+        margin-top: 0;
+        text-transform: uppercase;
+      }
+      > p{
+        text-transform: capitalize;
+      }
+    }
+    > form{
+      background-color: white;
+      padding: 1px;
+
+      > input{
+        border: 0;
+        padding: 6px 8px;
+        font-size: 0.9rem;
+      }
+      > [type="email"]{
+        &::placeholder{
+          text-transform: uppercase;
+          color: black;
+        }
+      }
+      > [type="submit"]{
+        text-transform: uppercase;
+      }
+    }
+  }
+
 }
