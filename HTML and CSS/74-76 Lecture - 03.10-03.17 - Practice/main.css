@@ -2,9 +2,11 @@
 
 :root{
   --main-color: #645cff;
+  --main-color-opacity-high: #4c43f7e4;
+  --main-color-opacity-low: #4c43f714;
   --main-color-light: #9994f4;
   --main-color-dark: #4c43f7;
-  --screen-size-padding: 30px;
+  --screen-size-padding: 30px 8vw;
   --section-bg-color-1: #f8fbfc;
   
   line-height: 1.3;
@@ -152,9 +154,11 @@ main{
 
       > div{
         display: grid;
+        grid-template-rows: 3fr 2fr 4fr;
         gap: 10px;
         justify-items: center;
         text-align: center;
+        align-items: center;
 
         > i{
           background-color: var(--main-color);
@@ -177,7 +181,7 @@ main{
 
     > .toursContainer{
       display: grid;
-      gap: 40px;
+      gap: 40px 15px;
 
       > div{
         box-shadow: 0 1px 3px 1px #e8e8e8;
@@ -343,5 +347,89 @@ footer{
   > p{
     color: white;
     margin: 0;
+  }
+}
+
+@media (min-width: 600px){
+  header{
+    > nav{
+      display: unset;
+
+      > ul{
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+
+        display: flex;
+        gap: 10px;
+
+        > li{
+          > a{
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+  
+  main{
+    > #home{
+      background-color: unset;
+      background-image: linear-gradient(
+        to bottom,
+        var(--main-color-opacity-high),
+        var(--main-color-opacity-low)
+      );
+      position: relative;
+
+      &::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: url('./media/heroBackground.jpg');
+        background-size: cover;
+        background-position: center;
+        z-index: -1;
+      }
+    }
+
+    > #about{
+      > div.image{
+        width: 90%;
+        border: 5px solid var(--main-color);
+        border-radius: 5px;
+        font-size: 0;
+
+        > img{
+          width: 105%;
+          transform: translate(15px, 15px);
+        }
+      }
+      
+    }
+
+    > #services{
+      > .servicesContainer{
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+      }
+    }
+
+    > #tours{
+      > .toursContainer{
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    > #gallery{
+      > .galleryContainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+      }
+    }
   }
 }
