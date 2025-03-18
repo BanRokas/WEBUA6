@@ -72,6 +72,9 @@ main{
   > section:not(#gallery){
     padding: var(--screen-size-padding);
   }
+  > section#services, section#about{
+    padding-bottom: 50px;
+  }
   > section{
     > h2{
       text-align: center;
@@ -239,11 +242,24 @@ main{
         }
       }
     }
+    > p{
+      padding-top: 30px;
+      text-align: center;
+      text-transform: capitalize;
+      > a{
+        color: var(--main-color);
+        text-decoration: none;
+      }
+    }
   }
 
   > #gallery{
     background-color: var(--section-bg-color-1);
-    padding-top: var(--screen-size-padding);
+    padding-top: 30px;
+
+    > h2{
+      margin-top: 0;
+    }
 
     > .galleryContainer{
       background-color: var(--main-color);
@@ -373,7 +389,7 @@ footer{
       }
     }
   }
-  
+
   main{
     > #home{
       background-color: unset;
@@ -421,6 +437,10 @@ footer{
     > #tours{
       > .toursContainer{
         grid-template-columns: 1fr 1fr;
+
+        > div{
+          height: unset;
+        }
       }
     }
 
@@ -428,7 +448,68 @@ footer{
       > .galleryContainer{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 5px;
+
+        > img{
+          height: 250px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 900px){
+  main{
+    > #about{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+
+      > h2{
+        grid-column: span 2;
+      }
+    }
+
+    > #services{
+      > .servicesContainer{
+        > div{
+          grid-template-rows: unset;
+          grid-template-columns: 1fr 4fr;
+          align-items: start;
+          text-align: unset;
+          justify-items: unset;
+          
+          > i{
+            grid-row: span 2;
+          }
+        }
+      }
+    }
+
+    > #tours{
+      > .toursContainer{
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    }
+
+    > #gallery{
+      > .galleryContainer{
+        grid-template-columns: repeat(4, 1fr);
+
+        > img{
+          height: 150px;
+        }
+      }
+    }
+
+    > #subscribe{
+      flex-direction: row;
+      gap: 20px;
+      > *{
+        flex: 1;
+      }
+      > form{
+        display: flex;
+        justify-content: space-between;
       }
     }
   }
