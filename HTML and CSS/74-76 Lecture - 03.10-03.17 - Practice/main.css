@@ -296,5 +296,52 @@ main{
       }
     }
   }
+}
 
+footer{
+  padding: 50px var(--screen-size-padding);
+  background-color: #222;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+
+  > nav{
+    > ul{
+      margin: 0; 
+      padding: 0;
+      list-style-type: none;
+
+      display: flex;
+      gap: 10px;
+
+      > li{
+        > a{
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  > ul{
+    margin: 0; 
+    padding: 0;
+    list-style-type: none;
+
+    display: flex;
+    gap: 10px;
+
+    > li{
+      > a{
+        > i{
+          color: var(--main-color);
+        }
+      }
+    }
+  }
+  > p{
+    color: white;
+    margin: 0;
+  }
 }
